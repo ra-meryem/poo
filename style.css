@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcb4b4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .shopping-cart {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .cart-items {
+    margin: 20px 0;
+  }
+  
+  .cart-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .total-price {
+    font-size: 1.5rem;
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  /* Cart Item Styles */
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  .item-name {
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #27ae60;
+    margin-top: 5px;
+  }
+  
+  .item-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Quantity and Buttons */
+  .quantity {
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Buttons */
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .plus, .minus {
+    background-color: #ecf0f1;
+  }
+  
+  .plus:hover, .minus:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.1);
+  }
+  
+  /* Delete icon */
+  .delete {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .delete:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .shopping-cart {
+      width: 95%;
+    }
+  
+    .item-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-controls {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  
+    .quantity {
+      margin: 10px 0;
+    }
+  }
+  
